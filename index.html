@@ -17,7 +17,35 @@
     <script>
         AOS.init();
     </script>
-    <nav class="d-flex align-item-center p-3">
+        <div class="circle" id="circle">
+            <img src="Assets/icons8-menu-150.png" alt="">
+    
+        </div>
+       <div class="sidebar" id="sidebar">
+        <ul id="" class="">
+            <li>
+                <div class="close-sidebar" id="sidebar-close">
+                    <img src="Assets/icons8-close-100.png" alt="">
+                </div>
+            </li>
+
+            <li class="ms-5">
+                <a href="#home">HOME</a>
+            </li>
+            <li class="ms-5">
+                <a href="#about">ABOUT</a>
+            </li>
+            <li class="ms-5">
+                <a href="#project">PROJECT</a>
+            </li>
+            <li class="ms-5">
+                <a href="#contact">CONTACT</a>
+            </li>
+        </ul>
+
+    </div>
+   
+    <nav class="d-flex align-item-center p-3" id="nav">
         <div class="">ChrisTan</div>
         <ul id="ul" class="close-menu nav-ul">
             <li>
@@ -33,10 +61,10 @@
                 <a href="#about">ABOUT</a>
             </li>
             <li class="ms-5">
-                <a href="">PROJECT</a>
+                <a href="#project">PROJECT</a>
             </li>
             <li class="ms-5">
-                <a href="">CONTACT</a>
+                <a href="#contact">CONTACT</a>
             </li>
         </ul>
         <div class="menu" id="open">
@@ -44,6 +72,8 @@
         </div>
     </nav>
 
+
+ 
     <section class="home" id="home">
        
         <div>
@@ -52,20 +82,20 @@
             <h1 class="mt-5 christian" >I m Christian Mendoza </h1>
            <ul class="mt-5 icons">
             <li class="">
-                <div class="">
+                <div class="" id="instagram">
                     <i class="bi bi-instagram"></i>
                 </div>
                 
             </li>
             <li>
-                <div>
+                <div id="facebook">
                     <i class="bi bi-facebook"></i>
                 </div>
                 
             </li>
             <li>
-                <div>
-                    <i class="bi bi-instagram"></i>
+                <div id="linked">
+                    <i class="bi bi-linkedin"></i>
                 </div>
                 
             </li>
@@ -162,7 +192,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="skills-icon" data-aos="fade-left" data-aos-delay="3000" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="skills-icon" data-aos="fade-left" data-aos-delay="2900" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <img width="48" height="48" src="https://img.icons8.com/color/48/adobe-photoshop--v1.png" alt="photoshop"/>
                         <span>Photoshop</span>
                     </div>
@@ -172,7 +202,7 @@
 
             <ul class="" data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-delay="3000"
+            data-aos-delay="2900"
        >
                 <li>
                     Problem Solving Skills
@@ -199,7 +229,7 @@
             <h1 class="">MY WORK</h1>
           </div>
         <div class="mywork p-3" id="mywork">
-                  <div class="card">
+                  <div class="card" data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="Assets/Crud.PNG" class="card-img-top" alt="..." />
                     <div class="card-body">
                       <p class="card-text">
@@ -213,7 +243,7 @@
                   </div>
               
            
-                  <div class="card">
+                  <div class="card" data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="Assets/mathQuiz.PNG" class="card-img-top" alt="..." />
                     <div class="card-body">
                       <p class="card-text">
@@ -221,16 +251,16 @@
                         unique learning needs and preferences, providing a tailored
                         educational experience.
                       </p>
-                      <a href="https://github.com/MrDongPhets/CRUD-Search" class="btn btn-dark" target="_blank">Github</a>
+                      <a href="https://github.com/MrDongPhets/Children-Math-Quiz" class="btn btn-dark" target="_blank">Github</a>
                     </div>
                   </div>
      
              
-                  <div class="card">
+                  <div class="card" data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="Assets/invoice.PNG" class="card-img-top" alt="..." />
                     <div class="card-body">
                       <p>Invoice Website is ongoing</p>
-                      <a href="https://github.com/MrDongPhets/CRUD-Search" class="btn btn-dark" target="_blank">Github</a>
+                      <a href="https://github.com/MrDongPhets/Invoice-Website-Ongoing" class="btn btn-dark" target="_blank">Github</a>
                     </div>
                   </div>
              
@@ -239,6 +269,41 @@
           </div>
 
     </section>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-info">
+            <h1>LOCATION</h1>
+            <h4 class="place">Purok 1, Laungcupang, La Paz, Tarlac</h4>
+            <h4>Philippines</h4>
+
+            <h1 class="mt-5">FOLLOW ME</h1>
+
+            <ul>
+                <li>
+                                       
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="input-form">
+
+            <form action="" class="form">
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter a valid email address">
+                <textarea name="comment" placeholder="Enter your message here"></textarea>
+
+                <button type="button" class="btn btn-secondary">SUBMIT</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="p-3"><h1>Christian</h1></div>
+
+    </footer>
 
 </body>
 </html>
