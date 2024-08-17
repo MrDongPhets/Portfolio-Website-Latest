@@ -109,6 +109,7 @@ nav div{
 .home{
     width: 100%;
     height: 87vh;
+    overflow: hidden;
     
 }
 
@@ -410,13 +411,13 @@ footer div h1{
 
     .about{
         width: 100%;
-        height: 270vh;
+        height: 200vh;
         display: flex;
         flex-wrap: wrap;
     }
     .project{
         width: 100%;
-        height: 230vh;
+        height: 150vh;
         background-color: rgb(172, 172, 172);
     }
 
@@ -436,16 +437,12 @@ footer div h1{
         height: 120px;
         padding: 30px;
         top: 2%;
-        left: 55%;
+        left: 60%;
         border-radius: 50%;
         background-color: black;
         z-index: 99;
         cursor: pointer;
     }
-    .circle img {
-        width: 100%;
-        height: 100%;
-        
-    }
+ 
 
 }
