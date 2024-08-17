@@ -36,6 +36,41 @@ $(document).ready(function () {
     );
   });
 
+    $("#instagram1").on("click", function () {
+      window.open("https://www.instagram.com/christdodong/", "_blank");
+    });
+
+    $("#facebook1").on("click", function () {
+      window.open(
+        "  https://www.facebook.com/profile.php?id=100010285125943",
+        "_blank"
+      );
+    });
+    $("#linked1").on("click", function () {
+      window.open(
+        "https://www.linkedin.com/in/christian-mendoza-20bb97314/",
+        "_blank"
+      );
+    });
+
+    
+    $("#instagram2").on("click", function () {
+      window.open("https://www.instagram.com/christdodong/", "_blank");
+    });
+
+    $("#facebook2").on("click", function () {
+      window.open(
+        "  https://www.facebook.com/profile.php?id=100010285125943",
+        "_blank"
+      );
+    });
+    $("#linked2").on("click", function () {
+      window.open(
+        "https://www.linkedin.com/in/christian-mendoza-20bb97314/",
+        "_blank"
+      );
+    });
+
 $("#circle").click(function () {
   if ($("#sidebar").hasClass("sidebar-right")) {
     // Show the sidebar
