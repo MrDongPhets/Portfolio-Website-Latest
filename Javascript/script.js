@@ -37,21 +37,49 @@ $(document).ready(function () {
   });
 
 $("#circle").click(function () {
-  $("#sidebar").removeClass("sidebar-right").addClass("sidebar");
+  if ($("#sidebar").hasClass("sidebar-right")) {
+    // Show the sidebar
+    $("#sidebar").removeClass("sidebar-right").addClass("sidebar");
+    $("#circle").removeClass("circle1").addClass("circle");
+    $("#overlay").removeClass("overlay");
+  } else {
+    // Hide the sidebar
+    $("#sidebar").removeClass("sidebar").addClass("sidebar-right");
+     $("#circle").removeClass("circle").addClass("circle1");
+    $("#overlay").addClass("overlay");
+  }
 });
 
-$("#sidebar-close").click(function () {
-  $("#sidebar").removeClass("sidebar").addClass("sidebar-right");
-});
+  function resetSVG() {
+    // Manually restart SVG animations
+    const svg = $("#circle svg").get(0);
+
+    // Manually restart animations by setting their begin attribute
+    const animations = svg.querySelectorAll("animate");
+    animations.forEach((anim) => {
+      anim.beginElement();
+    });
+  }
+
+
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
   if (scroll > 50) {
     $("#circle").fadeIn();
+     $("#sidebar").css("display", "block");
+      
+      
+
   } else {
     $("#circle").fadeOut();
     // Optionally hide the sidebar when scroll is less than 50
-    // $("#sidebar").removeClass("sidebar").addClass("sidebar-right");
+      $("#sidebar").css("display", "none");
+       $("#sidebar").removeClass("sidebar-right").addClass("sidebar");
+        $("#circle").removeClass("circle1").addClass("circle");
+        $("#overlay").removeClass("overlay");
+         resetSVG();
+   
   }
 });
 });
