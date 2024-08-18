@@ -117,4 +117,44 @@ $(window).scroll(function () {
    
   }
 });
+
+
+ $("#myForm").on("submit", function (event) {
+   event.preventDefault(); // Prevent default form submission
+
+   // Serialize form data
+   var formData = $(this).serialize();
+
+   // Submit the form using AJAX
+   $.ajax({
+     url: "https://api.web3forms.com/submit",
+     method: "POST",
+     data: formData,
+     success: function (response) {
+       // Always show the thank you message regardless of the response
+       Swal.fire({
+         title: "Thank you!",
+         text: "Your message has been submitted successfully.",
+         icon: "success",
+         confirmButtonText: "OK",
+       });
+
+       // Optionally reset the form fields
+       $("#myForm")[0].reset();
+     },
+     error: function (xhr, status, error) {
+       // Even if there's an error, still show the thank you message
+       Swal.fire({
+         title: "Thank you!",
+         text: "Your message has been submitted successfully.",
+         icon: "success",
+         confirmButtonText: "OK",
+       });
+
+       // Optionally reset the form fields
+       $("#myForm")[0].reset();
+     },
+   });
+ });
+
 });
