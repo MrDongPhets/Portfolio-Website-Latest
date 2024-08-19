@@ -117,6 +117,7 @@ $(window).scroll(function () {
        $("#sidebar").removeClass("sidebar-right").addClass("sidebar");
         $("#circle").removeClass("circle1").addClass("circle");
         $("#overlay").removeClass("overlay");
+        $("#ul").removeClass("open-menu");
          resetSVG();
    
   }
