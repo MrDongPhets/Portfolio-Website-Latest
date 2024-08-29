@@ -229,16 +229,16 @@ nav div{
 
 .about{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    min-height: 700px;
 }
 
 .sphere{
     margin: 5%;
     position: relative;
     width:500px;
-    height: 500px;
+    max-height: 500px;
     border-radius: 50%;
     background-color: black;
     display: block;
@@ -258,7 +258,7 @@ nav div{
 
 .skills{
     width: 600px;
-    height: 400px;
+    min-height: 400px;
 }
 
 .ul-skills{
@@ -283,7 +283,7 @@ nav div{
 
 .project{
     width: 100%;
-    height: 100vh;
+    max-height: 1500px;
     background-color: rgb(172, 172, 172);
     overflow: hidden;
 }
@@ -295,6 +295,7 @@ nav div{
 .mywork{
     display: flex;
     flex-wrap: wrap;
+    max-height: 1500px;
     gap: 2.5rem;
 
 }
@@ -306,7 +307,7 @@ nav div{
 
 .contact{
     width: 100%;
-    height: 100vh;
+    max-height: 1500px;
     background-color: rgb(63, 63, 63);
     display: flex;
     flex-wrap: wrap;
@@ -314,7 +315,7 @@ nav div{
 
 .contact-info{
     width: 650px;
-    height: 100vh;
+    max-height: 500px;
     padding-top: 5rem;
     padding-left: 5rem;
     background-color: rgb(85, 84, 84);
@@ -367,7 +368,7 @@ nav div{
 
 .input-form{
     width: 650px;
-    height: 100vh;
+    max-height: 500px;
     padding-top: 5rem;
     padding-left: 5rem;
 }
@@ -522,48 +523,27 @@ footer div .social-media li i {
     }
 
     
-.sphere{
-    margin: 5%;
-    position: relative;
-    width:500px;
-    height: 700px;
-    border-radius: 50%;
-    background-color: black;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    padding: 20px;
-    color: white;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-.skills{
-    width: 600px;
-    height: 400px;
-    margin-top: -30%;
-}
 
-    .about{
-        width: 100%;
-        height: 280vh;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .project{
-        width: 100%;
-        height: 230vh;
-        background-color: rgb(172, 172, 172);
-    }
 
-    .contact{
-        width: 100%;
-        height: 200vh;
-        background-color: rgb(63, 63, 63);
+    .sphere{
+        margin: 5%;
         display: flex;
-        flex-wrap: wrap;
+        width:500px;
+        max-height: 700px;
+        border-radius: 0px;
+        background-color: black;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5;
     }
+  
+
 
     .circle{
         position: fixed;
